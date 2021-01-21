@@ -1,0 +1,231 @@
+<!DOCTYPE  html>
+
+<html lang = "en">
+   <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=1600">
+      <title>test__food</title>
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link rel = "stylesheet" href = "css/index.css">
+   </head>
+
+   <body>
+      <header class = "header">
+         <div class = "header-top">
+            <div class = "logo">
+               <a class = "logo__link" href = "">Лого компании</a>
+            </div>
+
+            <nav class = "header-nav">
+               <div class = "nav-services">
+                  <a class = "nav-services__link" href = "">Услуги</a>
+               </div>
+               <div class = "nav-settings">
+                  <a class = "nav-settings__link" href = "">Настройки</a>
+               </div>
+
+               <div class = "my-account">
+                  <div class = "my-account__heading">
+                     <a class = "my-account__heading__link" href = "">Мой счёт</a>
+                  </div>
+                  <div class = "sub__my-account">
+                     <div class = "nav-account__payment">
+                        <a class = "nav-account__payment__link" href = "">Оплата и документы</a>
+                     </div>
+                     <div class = "nav-account__auth-stat">
+                        <a class = "nav-account__auth-stat__link" href = "">Статистика авторизаций</a>
+                     </div>
+                     <div class = "nav-account__pers-offer">
+                        <a class = "nav-account__pers-offer__link" href = "">Персональное предложение</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class = "nav-help">
+                  <a class = "nav-help__link" href = "">Помощь</a>
+               </div>
+            </nav>
+
+         <div class = "header__other-info">
+            <div>
+               <a href = "" data-toggle="modal" data-target="#myModal">Внести предложение</a>
+            </div>
+            <div>
+               <a href = "">Обратный звонок</a>
+            </div>
+            <div>
+               <img class = "ico-img" src = "source/img/icons/header/search.svg" alt = "search">
+               <img class = "ico-img" src = "source/img/icons/header/bell.svg" alt = "bell">
+            </div>
+            <div class = "div-line">
+            </div>
+            <div>
+               <div>
+                  <span>ООО Нойзибой</span>
+               </div>
+               <div>
+                  <span>Fedor Nababkin</span>
+               </div>
+            </div>
+            <div>
+               <img class = "ico-img__log" src = "source/img/icons/av.png" alt = "av">
+            </div>
+         </div>
+      </div>
+         <div class = "header-bottom">
+            <div class = "header__exchange-rates">
+               <div class = "currency">
+                  <p>Курсы валют</p>
+                  <p class = "prefiks">$</p><p class = "dollar">80.21</p>
+                  <div class = "dollar__arrow">
+                     <div class = "arrow-up">
+                        <div class = "arrow__top">
+                        </div>
+                        <div class = "arrow__bottom">
+                        </div>
+                     </div>
+                  </div>
+                  <p class = "prefiks">€</p><p class = "euro">93.23</p>
+                  <div class = "euro__arrow">
+                     <div class = "arrow-down">
+                        <div class = "arrow__top">
+                        </div>
+                        <div class = "arrow__bottom">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class = "stock">
+                  <p>Биржевые индексы</p>
+                  <p class = "prefiks">ICFCR </p><p class = "ICFCR">20.21</p>
+                  <div class = "ICFCR__arrow">
+                     <div class = "arrow-up">
+                        <div class = "arrow__top">
+                        </div>
+                        <div class = "arrow__bottom">
+                        </div>
+                     </div>
+                  </div>
+                  <p class = "prefiks">ICFPR </p><p class = "ICFPR">15.21</p>
+                  <div class = "ICFPR__arrow">
+                     <div class = "arrow-up">
+                        <div class = "arrow__top">
+                        </div>
+                        <div class = "arrow__bottom">
+                        </div>
+                     </div>
+                  </div>
+                  <p class = "prefiks">ICMPR </p><p class = "ICMPR">27.21</p>
+                  <div class = "ICMPR__arrow">
+                     <div class = "arrow-up">
+                        <div class = "arrow__top">
+                        </div>
+                        <div class = "arrow__bottom">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+
+      <nav class = "left-nav">
+
+         <div class = "nav-packages">
+            <div class = "panel panel-default">
+               <div class = "panel-heading left-nav__btn collapsed" id = "nav-packages_collapse" role="tab" data-toggle="collapse" data-target="#nav-packages" aria-expanded = "false" aria-controls = "nav-packages">
+                  <div class = "nav__btn__line">
+                  </div>
+                  <img class = "ico-img" src = "source/img/icons/navbar/packages.svg" alt = "packages">
+                  <p>Пакеты</p>
+               </div>
+               <div class = "panel-collapse collapse" role = "tabpanel" id = "nav-packages" aria-labelledby = "nav-packages_collapse">
+                  <div class = "list-group">
+                     <div class = "list-group-item sort__enable">
+                        <p>Действующие</p>
+                     </div>
+                     <div class = "list-group-item sort__disable">
+                        <p>Отключённые</p>
+                     </div>
+                     <div class = "list-group-item sort__test">
+                        <p>На тестовом периоде</p>
+                     </div>
+                     <div class = "panel-footer package_on">
+                        <p>Подключить пакет</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class = "nav-actions">
+            <div class = "panel panel-default">
+               <div class = "panel-heading left-nav__btn collapsed" id = "nav-actions_collapse" role="tab" data-toggle="collapse" data-target="#nav-actions" aria-expanded = "false" aria-controls = "nav-actions">
+                  <div class = "nav__btn__line">
+                  </div>
+                  <img class = "ico-img" src = "source/img/icons/navbar/actions.svg" alt = "actions">
+                  <p>Действия</p>
+               </div>
+               <div class = "panel-collapse collapse" role = "tabpanel" id = "nav-actions" aria-labelledby = "nav-actions_collapse">
+                  <div class = "list-group">
+                     <div class = "list-group-item package_off">
+                        <p>Отключить</p>
+                     </div>
+                     <div class = "panel-footer test">
+                        <p>Пройти тест</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class = "nav-offers">
+            <div class = "panel panel-default">
+               <div class = "panel-heading left-nav__btn collapsed" id = "nav-offers_collapse" role="tab" data-toggle="collapse" data-target="#nav-offers" aria-expanded = "false" aria-controls = "nav-offers">
+                  <div class = "nav__btn__line">
+                  </div>
+                  <img class = "ico-img" src = "source/img/icons/navbar/offers.svg" alt = "offers">
+                  <p>Персональное предложение</p>
+               </div>
+               <div class = "panel-collapse collapse" role = "tabpanel" id = "nav-offers" aria-labelledby = "nav-offers_collapse">
+               </div>
+            </div>
+         </div>
+
+      </nav>
+
+
+      <div class = "content">
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Внести предложение</h4>
+            </div>
+            <div class="modal-body">
+               <textarea class="text-offer" name="offer" rows="5" cols="70">
+                  Предложение
+               </textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-primary">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      <script src = "script/index.js"></script>
+   </body>
+</html>

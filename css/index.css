@@ -1,0 +1,456 @@
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,*:before, *:after{
+   box-sizing: border-box;
+}
+
+body {
+   min-width: 1600px !important;
+   font-family: 'PT Sans', sans-serif;
+}
+
+/*---------------------HEADER  START--------------------------*/
+
+.header {
+   position: absolute;
+   display: block;
+   min-width: 1400px;
+   width: 100%;
+   height: 122px;
+   top: 0px;
+   left: 0px;
+}
+
+.header-top {
+   position: relative;
+   height: 84px;
+   background-color: #363740;
+   display: flex;
+   /*grid-template-columns: 255px 524px 1fr 700px;*/
+}
+
+.header-bottom {
+   position: relative;
+   height: 38px;
+   background-color: #3E4049;
+}
+
+.logo {
+   width: 255px;
+   height: 84px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.logo a {
+   display: inline-block;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 16px;
+   color: #fff;
+   padding: 25px;
+}
+
+.header-nav {
+   position: relative;
+   display: grid;
+   grid-template-columns: 100px 130px 130px 100px;
+}
+
+.header-nav a {
+   display: inline-block;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   color: #F7F8FC;
+   margin: 25px 15px 25px 15px;
+}
+
+.nav-settings, .my-account__heading, .nav-services, .nav-help {
+   position: relative;
+   height: 84px;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.nav-services:hover, .nav-settings:hover, .nav-help:hover {
+   background-color: #3E4049;
+}
+
+.my-account {
+   position: relative;
+}
+
+.my-account:hover .my-account__heading {
+   background-color: #3E4049;
+}
+
+.my-account:hover .sub__my-account {
+   display: block;
+   z-index: 10;
+}
+
+.sub__my-account {
+   display: none;
+   position: absolute;
+   left: 0px;
+   padding: 0px;
+   margin: 0px;
+   width: 240px;
+   background-color: #3E4049;
+}
+
+.sub__my-account a {
+   display: inline;
+}
+
+.sub__my-account div {
+   height: 20px;
+   padding: 0px;
+   margin: 5px;
+}
+
+.sub__my-account div:hover a {
+   color: #848797;
+}
+
+.header__other-info {
+   position: absolute;
+   height: 84px;
+   top: 0px;
+   right: 0px;
+   display: flex;
+   align-items: center;
+}
+
+.header__other-info>div {
+   margin: auto 7px auto 7px;
+   font-style: normal;
+   font-weight: normal;
+   color: #F7F8FC;
+}
+
+.header__other-info a {
+   margin: auto;
+   text-decoration: underline;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   color: #F7F8FC;
+}
+
+.div-line {
+   width: 0px;
+   height: 34px;
+   border: 1px solid #F7F8FC;
+   margin: 0px 10px 0px 10px;
+}
+
+.ico-img__log {
+   margin: auto 20px auto 0px;
+}
+
+.header__exchange-rates, .currency, .stock {
+   display: flex;
+}
+
+.header__exchange-rates p {
+   margin: 7px 0px 7px 35px;
+   white-space: nowrap;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 20px;
+   color: #FFFFFF;
+}
+
+.header__exchange-rates .prefiks {
+   margin: 7px -33px 7px 35px;
+}
+
+.arrow-up, .arrow-down {
+   position: relative;
+   width: 10px;
+   height: 25px;
+   margin: 10px 5px 10px 5px;
+}
+
+.arrow-up .arrow__top {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 5px; 
+   height: 5px; 
+   border-left: 1px solid green;
+   border-right: 1px solid transparent;
+   border-bottom: 1px solid transparent;
+   border-top: 1px solid green;
+   transform: rotate(45deg);
+}
+.arrow-up .arrow__bottom {
+   position: absolute;
+   top: 0px;
+   left: 2px;
+   width: 0px; 
+   height: 15px; 
+   border: 0.5px solid green;
+}
+
+.arrow-down .arrow__top {
+   position: absolute;
+   top: 10px;
+   left: 0px;
+   width: 5px; 
+   height: 5px; 
+   border-left: 1px solid red;
+   border-right: 1px solid transparent;
+   border-bottom: 1px solid transparent;
+   border-top: 1px solid red;
+   transform: rotate(225deg);
+}
+.arrow-down .arrow__bottom {
+   position: absolute;
+   top: 0px;
+   left: 2px;
+   width: 0px; 
+   height: 15px; 
+   border: 0.5px solid red;
+}
+
+/*---------------------HEADER  END--------------------------*/
+
+
+/*---------------------LEFT  NAVBAR  START---------------------------*/
+
+.left-nav {
+   position: absolute;
+   top: 122px;
+   left: 0px;
+   width: 255px;
+   height: 958px;
+   background-color: #363740;
+}
+
+.left-nav div {
+   background-color: #363740;
+   margin: 0px;
+   border-radius: 0px;
+   border: none;
+}
+
+.panel-heading {
+   background-color: #3E4049 !important;
+}
+
+.collapsed {
+   background-color: #363740 !important;
+}
+
+.nav__btn__line {
+   display: none;
+   position: absolute;
+   left: 0px;
+   top: 5px;
+   width: 0px;
+   height: 50px;
+   border: 1px solid #fff !important;
+}
+
+.left-nav__btn {
+   position: relative;
+   height: 60px;
+   display: flex;
+}
+
+.left-nav__btn:hover {
+   background-color: #3E4049 !important;
+}
+
+.left-nav .ico-img {
+   display: inline-block;
+   vertical-align: bottom;
+   width: 20px;
+   height: 20px;
+   margin: auto 10px auto 20px;
+}
+
+.left-nav p {
+   display: inline-block;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   color: #F7F8FC;
+   margin: auto 0px;
+   padding: auto 0px;
+   vertical-align: middle;
+}
+
+.list-group p {
+   padding: 0px 20px 0px 20px;
+}
+
+.sort__enable:hover, .sort__disable:hover, .sort__test:hover {
+   background-color: #3E4049;
+}
+
+/*---------------------LEFT  NAVBAR  END---------------------------*/
+
+.content {
+   position: absolute;
+   top: 122px;
+   left: 255px;
+   display: grid;
+   width: calc(100% - 255px);
+   grid-template-columns: repeat(auto-fill, 280px);
+   grid-template-rows: repeat(auto-fit, 400px);
+}
+
+/*-------------------PACKAGES  START----------------------*/
+
+.package {
+   position: relative;
+   justify-content: center;
+   width: 224px;
+   height: 347px;
+   margin: 25px;
+   border: 1px solid #DFE0EB;
+   border-radius: 6px;
+   display: inline-block;
+   transform: scale(1);
+}
+
+.package__enabled {
+   position: absolute;
+   width: 114px;
+   height: 29px;
+   top: 15px;
+   left: 108px;
+   right: 1px;
+   bottom: 303px;
+   background-color: #3751FF;
+}
+
+.package__enabled, .package__disabled, .package__tested span {
+   display: block;
+   padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: center;
+   color: #F7F8FC;
+}
+
+.package__disabled {
+   position: absolute;
+   width: 114px;
+   height: 29px;
+   top: 15px;
+   left: 108px;
+   right: 1px;
+   bottom: 303px;
+   background-color: #FF4B55;
+}
+
+.package__tested {
+   position: absolute;
+   width: 114px;
+   height: 29px;
+   top: 15px;
+   left: 108px;
+   right: 1px;
+   bottom: 303px;
+   background-color: #FF8F3F;
+}
+
+.package__img {
+   display: block;
+   position: absolute;
+   width: 80px;
+   height: 80px;
+   top: 62px;
+   left: 71px;
+   right: 72px;
+   bottom: 205px;
+}
+
+.package p {
+   display: inline-block;
+   position: absolute;
+   width: 224px;
+   text-align: center;
+   color: #252733;
+   font-style: normal;
+}
+
+.package__number {
+   top: 162px;
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.package__name {
+   top: 183px;
+   font-weight: 900;
+   font-size: 10px;
+   line-height: 13px;
+}
+
+.package__prom {
+   top: 223px;
+   font-weight: bold;
+   font-size: 10px;
+   line-height: 13px;
+}
+
+.package__staff {
+   top: 241px;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 18px;
+}
+
+.package__more-info {
+   position: absolute;
+   width: 154px;
+   height: 33px;
+   top: 274px;
+   left: 34px;
+   border: 1px solid #3751FF;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.package__more-info__link {
+   display: inline-block;
+   padding: 5px;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   color: #3751FF;
+}
+
+.package__more-info:hover {
+   background-color: #3751FF;
+}
+
+.package__more-info:hover a {
+   color: #F7F8FC;
+}
+
+.package__more-info__link:hover {
+   text-decoration: none;
+}
+
+/*-------------------PACKAGES  END----------------------*/
